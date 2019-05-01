@@ -17,5 +17,12 @@ defmodule GildedRose do
     end
   end
 
+  def update_quality_if(item, condition, change_quality) do
+    case condition do
+      true -> change_quality.(item)
+      false -> item
+    end
+  end
+
 end
 
