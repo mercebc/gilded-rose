@@ -16,7 +16,7 @@ defmodule ItemModifierTest do
 
   test "decreases the item's quality by two" do
     item = %Item{name: "Backstage passes to a TAFKAL80ETC concert", sell_in: 8, quality: 3}
-           |> ItemModifier.decrease_qualityx2
+           |> ItemModifier.decrease_quality_x2
     assert item.quality == 1
   end
 
